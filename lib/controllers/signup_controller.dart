@@ -17,7 +17,6 @@ class SignupController extends AppBaseController {
   String? selectedCity;
   String? selectedPlace;
 
-
   int? selectedSateIndex ;
 
   void onTapHome() {
@@ -75,6 +74,7 @@ class SignupController extends AppBaseController {
  // String? id;
 
   Future<void> chooseState() async {
+    print("Data-------------${getStateData}");
     isLoading.value = true;
     try {
       Map<String, String> body = {};
